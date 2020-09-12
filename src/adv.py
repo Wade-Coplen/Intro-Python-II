@@ -37,6 +37,10 @@ room['treasure'].s_to = room['narrow']
 # Main
 #
 player = Player("George", room['outside'])
+torch = Item("Torch", "To guide you")
+satchel = Item("Satchel", "A bag to carry what you find")
+
+
 # Make a new player object that is currently in the 'outside' room.
 
 # Write a loop that:
@@ -56,6 +60,7 @@ print(f'{player.current_room.room_description}')
 # If the user enters "q", quit the game.
 while True:
     direction = input('Which direction will you choose? Enter n = North, s = South, e = East, w = West:')
+    pickupItem = 
     
     if direction == 'n':
         print(f'{player.current_room.n_to}')
@@ -63,5 +68,8 @@ while True:
         print('You must not be afraid. Go forward bravely!')
     if player.current_room:
         print(player.current_room.room_items)
-    if player.current_room
+   
+    if direction == 'q':
+        print('Game over')
+    if player.current.room == 
         break
